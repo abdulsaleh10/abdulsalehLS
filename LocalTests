@@ -1,0 +1,25 @@
+/**
+ * Project 4
+ *
+ * @author Abdul Saleh, Chris Qiu, Dayoon Suh, Daniel Sowers
+ * @version 11/15/2021
+ */
+
+public class LocalTests {   //This is to test all the methods in student and teacher classes
+    public static void main(String[] args) {
+        Student student = new Student("daniel", "123");
+        Teacher teacher = new Teacher("eylem", "456");
+        teacher.createDiscussionForum();
+        teacher.createReply(3, 4, "Hi");
+        teacher.deleteDiscussionForum(3);
+        teacher.editDiscussionForum(2, "New", "new");
+        System.out.println("This is the username of teacher " + teacher.getUsername());
+        System.out.println("This is the password of teacher " + teacher.getPassword());
+        teacher.giveGrade(student, 2, "56");
+        student.printStudentComments();
+        System.out.println("Students username " + student.getUsername());
+        System.out.println("Students password" + student.getPassword());
+        student.createReply(2, 3, "Hi --- reply test");
+        student.createComment(1, "Testing");
+    }
+}
