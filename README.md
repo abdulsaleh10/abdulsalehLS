@@ -1,4 +1,4 @@
-# Project 5
+# LMS Project
 Learning Management System: Discussion Board GUI
 
 HOW TO USE:
